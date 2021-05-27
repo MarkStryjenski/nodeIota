@@ -1,0 +1,18 @@
+[
+	{
+		"messageId": "48e109613a2754422bedc765534baeb8df567c1c9aaea496c7eed52996a11207",
+		"transactionId": "3db5bd50759db2cd15515fbeeb955c4c1eeb38111f738d5fe7eed664ec53ccbf",
+		"outputIndex": 1,
+		"isSpent": false,
+		"address": "iota1qz4qx5xrl59wnnvswxk4mjvhjkdk25yveft3us2hgxd5tn2l6gz4vnwld2d",
+		"amount": 1000000
+	},
+	{
+		"messageId": "24212e851f35cfd746ecb2ac40819960237838f4cdc95c216c7879799508fa1c",
+		"transactionId": "792743fc1300be8e3c72c3e883bf507ef36398abb57dc00db03a55e858c659e7",
+		"outputIndex": 0,
+		"isSpent": false,
+		"address": "iota1qz4qx5xrl59wnnvswxk4mjvhjkdk25yveft3us2hgxd5tn2l6gz4vnwld2d",
+		"amount": 1000000
+	}
+]

@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@iota/client": "^0.5.1"
+    "@iota/client": "^0.5.1",
+    "coingecko-api": "^1.0.10",
+    "mysql": "^2.18.1",
+    "url": "^0.11.0"
   }
 }
