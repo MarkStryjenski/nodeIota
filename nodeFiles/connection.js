@@ -12,27 +12,9 @@ const connectToDb = function connectToDatabase() {
     con.connect(function (err) {
         if (err) throw err;
         console.log("connected!");
-        // con.query("SELECT * FROM users", function (err, result, fields) {
-        //     if (err) throw err;
-        //     console.log(result);
-        //     // console.log(fields);
-        // });
     });
 }
 
-
-// function selectTransactions(outputId, callback) {
-//
-//     con.query(`SELECT crypto_name FROM conversions WHERE crypto_name='${outputId}'`, function (err, result, fields) {
-//         // console.log("chjik");
-//         if (err) callback(err);
-//         // console.log(result);
-//         var numRows = result.length;
-//         if(callback) return callback(numRows);
-//
-//     });
-//     // return false;
-// }
 
 const selectTransactions = function findTransaction(transactonId) {
     return new Promise(function (resolve, reject) {
@@ -50,6 +32,7 @@ const selectTransactions = function findTransaction(transactonId) {
             if (err) {
                 return reject(err);
             }
+            console.log(rows);
             resolve(rows);
         });
     });
