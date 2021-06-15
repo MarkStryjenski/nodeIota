@@ -15,6 +15,22 @@ const connectToDb = function connectToDatabase() {
     });
 }
 
+function deleteFromSensorsTable(lora_key) {
+    var sql_query = `DELETE FROM sensors WHERE lora_key="${lora_key}"`;
+    connectToDb.query(sql_query, function (err, result) {
+        if (err) throw err;
+        return "Deleted: " + result.rows;
+    });
+};
+
+function getReading(sensor_id) {
+    var sql_query = `SELECT energy_used FROM readings WHERE sensor_id="${sensor_id}"`;
+    connectToDb.query(sql_query, function (err, result) {
+        if (err) throw err;
+        return result.fields;
+    });
+}
+
 
 const selectTransactions = function findTransaction(transactonId) {
     return new Promise(function (resolve, reject) {
